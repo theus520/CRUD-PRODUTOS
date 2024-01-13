@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nunes Sports - Produtos</title>
-    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nunes Sports - Produtos</title>
+
 </head>
+
 <body>
-    
-    <script>
-        alert("Bem-vindo ao Nunes Sports!");
-    </script>
+	<h1> Nunes Sports - Produtos</h1>
+
+	<table>
+
+		<thead>
+
+			<tr>
+				<th>ID</th>
+				<th>Nome do Produto</th>
+				<th>Descrição do Produto</th>
+				<th>Preço do Produto</th>
+				<th>Ações</th>
+			</tr>
+		</thead>
+		<tbody id="produtos-list">
+			<!-- listagem de produtos -->
+		</tbody>
+
+	</table>
+	<form id="produto-form">
+     <label for="nome">Nome do Produto:</label>
+     <input type="text" id="nome" required>
+
+     <label for="descricao">Descrição do Produto:</label>
+     <textarea id="descricao"></textarea>
+     
+     <label for="preco">Preço do Produto:</label>
+     <input type="number" id="preco" step="0.01" required>
+
+     <button type="button" onclick="saveProduto()"> Salvar Produto </button>
+	</form>
+
+	<script> </script>
 </body>
+
 </html>
