@@ -3,10 +3,12 @@ package com.example.rabelo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.rabelo.entidade.Produto;
 import com.example.rabelo.repository.ProdutoRepository;
 
+@Service
 public class ProdutoService {
 
 	@Autowired
