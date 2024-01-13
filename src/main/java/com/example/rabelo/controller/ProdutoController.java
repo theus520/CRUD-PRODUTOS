@@ -30,7 +30,13 @@ public class ProdutoController {
 	
 	@GetMapping("/{id}")
 	public Produto getProdutoById(@PathVariable Long id) {
-		return produtoService.getProdutoById(id);
+		Produto produto = produtoService.getProdutoById(id);
+		
+		if (produto != null) {
+			 return produto;
+	    } else {
+	        throw new ProdutoNaoEncontradoException("Produto não encontrado para o ID: " + id);
+	    }
 	}
 	
 	@PostMapping
